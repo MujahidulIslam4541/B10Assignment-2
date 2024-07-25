@@ -11,7 +11,7 @@ body{
     background-size: cover;
 }
 
-header ,
+.header-section ,
 .habit-section-container ,
 .run-container ,
 .team-images
@@ -20,7 +20,7 @@ header ,
     margin: 0 auto;
 }
 
-.header{
+header{
     background: linear-gradient(360.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);;
 }
 
@@ -36,6 +36,7 @@ header ,
     color: rgb(230, 83, 60);
     font-size: 2rem;
     font-weight: 800;
+    font-style: italic;
 }
 #home{
     background: #E6533C;
@@ -54,12 +55,18 @@ header ,
     text-decoration: none;
     color: rgb(255, 255, 255);;
 }
+.nav-item i{
+    display: none;
+}
 
 /* navbar section responsive */
 
 @media screen  and (max-width:576px){
     .nav-item ul{
         display: none;
+    }
+    .nav-item i{
+        display: block;
     }
 }
 
@@ -119,6 +126,9 @@ header ,
     font-weight: 800;
     color: #ffff;
 }
+.video-titurial-heading i{
+    color: rgb(230, 83, 60);
+}
 .video-titurial-text{
     font-size: 0.6rem;
     color: rgba(255, 255, 255, 0.65);
@@ -140,7 +150,17 @@ header ,
         font-size: 2.5rem;
     }
     .banner-img{
+        margin-top: 30px;
         width: 100%;
+    }
+    .video-titurial{
+        left: 55%;
+        top: 100%;
+    }
+    .bottom{
+        top: 160%;
+        left: 10%;
+    
     }
 }
 
@@ -341,6 +361,9 @@ td{
     .BMI-calculate-chart{
         width: 100%;
     }
+    .calculate-your-BMI-input input ,select{
+        padding: 10px 20px;
+    }
 }
 
 
@@ -427,7 +450,7 @@ footer{
 .footer-container{
     padding-top: 30px;
     width: 90%;
-    margin: auto;
+    margin:auto;
     margin-top: 20px;
 }
 .footer-content{
@@ -443,6 +466,7 @@ footer{
     font-weight: 800;
     color: rgb(230, 83, 60);
     padding-bottom: 20px;
+    font-style: italic;
 }
 .fitness-content p{
     color: rgba(255, 255, 255, 0.5);
