@@ -41,7 +41,7 @@ header{
 #home{
     background: #E6533C;
     padding: 6px 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     color: #ffff;
 }
 .nav-item ul{
@@ -70,14 +70,16 @@ header{
     }
 }
 
+
+
 /* banner section */
 .banner-container{
-    color:#ffff;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
 }
 .banner-text h2{
+    color: #ffff;
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 30px;
@@ -111,7 +113,8 @@ header{
 .banner-img img{
     width: 100%;
 }
-.video-titurial{
+.video-titurial ,
+.free-work-video{
     width: 120px;
     height: 70px;
     position: absolute;
@@ -120,12 +123,14 @@ header{
     color: #ffff;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+    border-radius: 10px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
 }
 
-.video-titurial-heading{
+.video-titurial-heading,
+.free-work-video-heading
+{
     font-size:1.5rem ;
     font-weight: 800;
     color: #ffff;
@@ -133,7 +138,8 @@ header{
 .video-titurial-heading i{
     color: rgb(230, 83, 60);
 }
-.video-titurial-text{
+.video-titurial-text,
+.free-work-video-text{
     font-size: 0.6rem;
     color: rgba(255, 255, 255, 0.65);
 }
@@ -157,13 +163,13 @@ header{
         margin-top: 30px;
         width: 100%;
     }
-    .video-titurial{
+    .free-work-video{
         left: 55%;
-        top: 100%;
+        top: 110%;
     }
     .bottom{
-        top: 160%;
-        left: 10%;
+        top:160%;
+        left:10%;
     
     }
 }
@@ -245,6 +251,7 @@ header{
 }
 .run-text h2{
     font-size: 2rem;
+    letter-spacing: 2px;
     font-weight: 800;
     margin-bottom: 10px;
 }
@@ -293,8 +300,7 @@ header{
 .calculator-heading{
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 80px;
-    color: #ffff;
+    margin-bottom: 50px;
 }
 .calculator-heading h2{
     font-size: 2.3rem;
@@ -368,12 +374,9 @@ td{
         width: 100%;
     }
     .calculate-your-BMI-input input ,select{
-        padding: 10px 10px;
+        padding: 10px 5px;
     }
 }
-
-
-
 
 
 
@@ -405,7 +408,7 @@ td{
     gap: 20px;
     color: #ffff;
     margin-top: 30px;
-    background: #222222;
+    background:#222222;
     border-radius: 10px;
 }
 
@@ -415,7 +418,7 @@ td{
     border-radius: 10px;
     
 }
-.team-img {
+.team-img{
     position: relative;
 }
 .team-img h4{
@@ -442,16 +445,12 @@ td{
 
 
 
-
-
-
-
 /* footer section */
 
 footer{
     margin-top: 80px;
     max-width: 1005px;
-    background:#222222;
+    background: rgba(255, 255, 255, 0.1);
 }
 .footer-container{
     padding-top: 30px;
