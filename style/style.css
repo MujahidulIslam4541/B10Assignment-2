@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(../images/cool-background\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header ,
+.habit-section-container ,
+.run-container ,
+.team-images
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(360.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);;
+}
+
+
+/* navbar section */
+.navbar{
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    font-weight: 800;
+}
+#home{
+    background: #E6533C;
+    padding: 6px 20px;
+    border-radius: 20px;
+    color: #ffff;
+}
+.nav-item ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-item ul li{
+    list-style: none;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);;
+}
+
+/* navbar section responsive */
+
+@media screen  and (max-width:576px){
+    .nav-item ul{
+        display: none;
+    }
+}
+
+/* banner section */
+.banner-container{
+    color:#ffff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.banner-text h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.banner-text p{
+    color:rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+}
+ .btn{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    color: #ffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    background: transparent;
+}
+#Join-club-btn{
+    background: rgb(230, 83, 60);
+    border: none;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+}
+.video-titurial{
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    left: 82%;
+    top: 40%;
+    color: #ffff;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.video-titurial-heading{
+    font-size:1.5rem ;
+    font-weight: 800;
+    color: #ffff;
+}
+.video-titurial-text{
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+.bottom{
+    top: 80%;
+    left: 60%;
+
+}
+
+
+
+/* banner section responsive */
+@media screen  and (max-width:576px){
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-text h2{
+        font-size: 2.5rem;
+    }
+    .banner-img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* habit section */
+.habit-section-container{
+    background: rgb(0, 0, 0);
+    margin-top: 80px;
+    color: #ffff;
+}
+.habit-section-heading{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.habit-section-heading h2{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.habit-section-heading p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+}
+.habit-section-img{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 30px;
+}
+.habit-section-img img{
+    border-radius: 50%;
+}
+.img1 h4{
+    font-size:1.2rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+.img1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+
+/* Habit section resfonsive */
+@media screen and (max-width:576px){
+    .habit-section-img{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+/* run and extra section */
+.run-container{
+    background: #222222;
+    margin-top: 80px;
+    color: #ffff;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+.run-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.run-text h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.run-text p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    line-height: 20px;
+}
+ .another-btn{
+    background: rgb(230, 83, 60);
+    border: none;
+}
+.run-img{
+    width: 50%;
+}
+.run-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* run section resfonsive */
+@media screen and (max-width:576px){
+    .run-container{
+        flex-direction: column;
+    }
+    .run-text{
+        width: 100%;
+    }
+    .run-img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Calculate section */
+.calcolator-container{
+    max-width:1005px ;
+    margin-top: 50px;
+    color: #ffff;
+}
+.calculator-heading{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    color: #ffff;
+}
+.calculator-heading h2{
+    font-size: 2.3rem;
+    color: #ffff;
+    font-weight: 800;
+}
+.calculator-heading p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+}
+
+.calculator-content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 30px;
+    
+}
+.calculator-color{
+    background: rgb(34, 34, 34);
+    padding: 30px 0px;
+}
+.BMI-calculate-chart{
+    width: 50%;
+}
+
+.BMI-calculate-chart table{
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+td ,th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.calculate-your-BMI p{
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+
+.calculate-your-BMI-input{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.calculate-your-BMI-input input ,select{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+}
+#activity{
+    grid-column: span 2;
+}
+
+@media screen and (max-width:576px){
+    .calculator-content{
+        flex-direction: column;
+    }
+    .BMI-calculate-chart{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* our team section */
+.our-team-heading{
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ffff;
+    margin-top: 50px;
+    text-align: center;
+}
+.our-team-heading h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.our-team-heading p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+    font-size: 0.85rem;
+}
+
+.team-images{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    color: #ffff;
+    margin-top: 30px;
+    background: #222222;
+    border-radius: 10px;
+}
+
+.team-img img{
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    
+}
+.team-img {
+    position: relative;
+}
+.team-img h4{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    background: none;
+}
+.team-img p{
+    position: absolute;
+    top: 84%;
+    left: 5%;
+    background: none;
+}
+
+/* Our team section responsive */
+@media screen and (max-width:576px) {
+    .team-images{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* footer section */
+
+footer{
+    margin-top: 80px;
+    max-width: 1005px;
+    background:#222222;
+}
+.footer-container{
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.fitness-content{
+    width: 40%;
+}
+.fitness-content h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    padding-bottom: 20px;
+}
+.fitness-content p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+}
+.get-started-content1 h2{
+    color: #ffff;
+    padding-bottom: 20px;
+}
+.get-started-content1 p{
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copy-right-text{
+    text-align: center;
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+
+/* footer content responsive */
+@media screen and (max-width:576px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .fitness-content{
+        width: 100%;
+    }
+}
