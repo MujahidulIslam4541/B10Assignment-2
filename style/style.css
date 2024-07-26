@@ -16,7 +16,7 @@ body{
 .run-container ,
 .team-images
 {
-    width: 90%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -62,6 +62,9 @@ header{
 /* navbar section responsive */
 
 @media screen  and (max-width:576px){
+    .navbar{
+        padding: 20px 20px;
+    }
     .nav-item ul{
         display: none;
     }
@@ -156,6 +159,7 @@ header{
 @media screen  and (max-width:576px){
     .banner-container{
         flex-direction: column;
+        padding: 0px 20px;
     }
     .banner-text h2{
         font-size: 2.5rem;
@@ -164,6 +168,17 @@ header{
         margin-top: 30px;
         width: 100%;
     }
+    .free-work-video{
+        left: 55%;
+        top: 100%;
+    }
+    .bottom{
+        top:160%;
+        left:10%;
+    
+    }
+}
+@media screen and (max-width:400px){
     .free-work-video{
         left: 55%;
         top: 100%;
@@ -277,6 +292,7 @@ header{
 @media screen and (max-width:576px){
     .run-container{
         flex-direction: column;
+         margin: 80px 20px;
     }
     .run-text{
         width: 100%;
@@ -349,8 +365,6 @@ td{
     padding-top: 30px;
     line-height: 25px;
 }
-
-
 .calculate-your-BMI-input{
     margin-top: 30px;
     display: grid;
@@ -376,7 +390,10 @@ td{
         width: 100%;
     }
     .calculate-your-BMI-input input ,select{
-        padding: 10px 5px;
+        padding: 10px 15px;
+    }
+    .calculator-heading{
+        padding-left: 20px;
     }
 }
 
@@ -439,8 +456,10 @@ td{
 /* Our team section responsive */
 @media screen and (max-width:576px) {
     .team-images{
+        margin: 30px 20px;
         grid-template-columns: 1fr;
     }
+    
 }
 
 
