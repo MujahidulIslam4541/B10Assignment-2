@@ -9,7 +9,7 @@ body{
     background-image:url(../images/cool-background\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1005px;
+    max-width: 1005px;
 }
 
 .header-section ,
