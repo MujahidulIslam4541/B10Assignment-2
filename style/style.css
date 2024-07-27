@@ -113,6 +113,7 @@ header{
 }
 .banner-img{
     width: 50%;
+    position: relative;
 }
 .banner-img img{
     width: 100%;
@@ -123,14 +124,20 @@ header{
     width: 120px;
     height: 70px;
     position: absolute;
-    left: 82%;
-    top: 40%;
+    left: 62%;
+    top: 20%;
     color: #ffff;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
+}
+
+.bottom{
+    top: 70%;
+    left: -10%;
+
 }
 
 .video-titurial-heading,
@@ -140,19 +147,19 @@ header{
     font-weight: 800;
     color: #ffff;
 }
+
+
 .video-titurial-heading i{
     color: rgb(230, 83, 60);
 }
+
+
 .video-titurial-text,
 .free-work-video-text{
     font-size: 0.6rem;
     color: rgba(255, 255, 255, 0.65);
 }
-.bottom{
-    top: 80%;
-    left: 60%;
 
-}
 
 
 
@@ -169,24 +176,8 @@ header{
         margin-top: 30px;
         width: 100%;
     }
-    .free-work-video{
-        left: 55%;
-        top: 100%;
-    }
     .bottom{
-        top:160%;
-        left:10%;
-    
-    }
-}
-@media screen and (max-width:400px){
-    .free-work-video{
-        left: 55%;
-        top: 100%;
-    }
-    .bottom{
-        top:120%;
-        left:10%;
+        left:0%;
     
     }
 }
