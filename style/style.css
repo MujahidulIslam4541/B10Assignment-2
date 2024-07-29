@@ -381,8 +381,12 @@ td{
     .BMI-calculate-chart{
         width: 100%;
     }
+    .calculate-your-BMI-input{
+        gap: 10px;
+    }
     .calculate-your-BMI-input input ,select{
-        padding: 10px 15px;
+        width: 100%;
+        padding: 10px 0px;
     }
     .calculator-heading{
         padding-left: 20px;
