@@ -15,7 +15,8 @@ body{
 .header-section ,
 .habit-section-container ,
 .run-container ,
-.team-images
+.team-images,
+.about-container
 {
     max-width: 900px;
     margin: 0 auto;
@@ -185,6 +186,76 @@ header{
 
 
 
+/* About us section start */
+.about-container{
+    border: 2px solid red;
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.about-text{
+    width: 60%;
+}
+.about-text h5{
+    font-size: 1rem;
+    color: #E6533C;
+}
+.about-text h2{
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #ffff;
+}
+.about-text p{
+    color:rgba(255, 255, 255, 0.5);
+}
+.experiances{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.experiances h4{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffff;
+}
+.experiances h4 span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #E6533C;
+}
+.experiances p{
+    color:rgba(255, 255, 255, 0.5);
+    margin-top: 8px;
+}
+.experiances >div{
+    border-left:2px solid rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width:576px){
+    .about-container{
+        padding: 10px;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .about-text{
+        width: 100%;
+    }
+}
+/* About us section end */
+
 
 
 
@@ -233,6 +304,9 @@ header{
 @media screen and (max-width:576px){
     .habit-section-img{
         grid-template-columns: 1fr;
+    }
+    .habit-section-heading{
+        padding: 20px;
     }
 }
 
@@ -389,7 +463,7 @@ td{
         padding: 10px 0px;
     }
     .calculator-heading{
-        padding-left: 20px;
+        padding: 20px;
     }
 }
 
